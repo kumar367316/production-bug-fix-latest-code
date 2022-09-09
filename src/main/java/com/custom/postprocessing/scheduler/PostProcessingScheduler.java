@@ -721,6 +721,7 @@ public class PostProcessingScheduler {
 				File file = new File(fileName);
 				files.add(fileName);
 			}
+			logger.info("total number of archive file is:"+files.size());
 			if (files.size() > 0) {
 				ZipUtility zipUtility = new ZipUtility();
 				zipUtility.zipProcessing(files, archiveZipFileName);
