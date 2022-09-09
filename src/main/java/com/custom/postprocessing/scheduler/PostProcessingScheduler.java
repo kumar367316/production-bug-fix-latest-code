@@ -172,8 +172,7 @@ public class PostProcessingScheduler {
 
 	@Scheduled(cron = "${cron-job-print-interval}")
 	public void postProcessing() {
-		String message = smartCommPostProcessing();
-		logger.info(message);
+		smartCommPostProcessing();
 	}
 
 	public String smartCommPostProcessing() {
